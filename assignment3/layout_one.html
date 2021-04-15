@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout One</title>
+    
+        <meta charset="UTF-8">
+        <meta name="description" content="File path worksheet on Relative file paths">
+        <meta name="keywords" content="Absolute File Path, Relative File Path, Worksheet">
+        <meta name="author" content="T. Noble">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link href="css/layout_one.css" rel="stylesheet" type="text/css">
+
+        <style>
+            @font-face {
+                font-family: 'Mollen';
+                src: url(font/Mollen.otf);
+            }
+            @font-face {
+                font-family: 'Bandero';
+                src: url(font/Bandero.otf);
+            }
+            @font-face {
+                font-family: 'Nerve Agent';
+                src: url(font/Nerve_Agent.otf);
+            }
+            header h1{
+                font-family: 'Nerve Agent';
+            }
+            #flexContainer div h1{
+                font-family: 'Nerve Agent';
+            }
+            #flexContainer div div h2{
+                font-family: 'Nerve Agent';
+            }
+            #stndInfo ol{
+                font-family: 'Mollen';
+            }
+            #schedule dl{
+                font-family: 'Mollen';
+            }
+            #newsInfo h4{
+                font-family: 'Mollen';
+            }
+            @media screen and (max-width: 1310px){
+                body #container #logo img{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 800px){
+                body #container #logo h1{
+                    font-size: 40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div id="logo">
+                    <img src="images/logoIMGcopy.jpeg" alt="logo" style="float: left;" height="150px" width="40%">
+                    <h1>Twin Cities</h1>
+                    <h1 style="margin-top: -20px;">ESports</h1>
+                </div>
+                <div id="btn1">
+                    <button>Rocket League</button>
+                    <div style="height: 15px;"></div>
+                    <button>COD: Cold War</button>
+                </div>
+                <div id="btn2">
+                    <button>Fortnite</button>
+                    <div style="height: 15px;"></div>
+                    <button>COD: Modern Warfare</button>
+                </div>
+            </header>
+            <div id="flexContainer">
+                <div id="standings">
+                    <h1 class="divTitle">Standings</h1>
+                    <div id="stndInfo">
+                        <div style="float: right;">
+                            <h2>Fortnite</h2>
+                            <ol>
+                                <li>Edina  3-0</li>
+                                <li>Minneapolis   3-0</li>
+                                <li>SHakopee   2-1</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h2>Rocket League</h2>
+                            <ol>
+                                <li>Bloomington  3-0</li>
+                                <li>Minnetonka   2-1</li>
+                                <li>Farmington   2-1</li>
+                            </ol>
+                        </div>
+                        <div style="float: right;">
+                            <h2>Modern Warfare</h2>
+                            <ol>
+                                <li>Minnetonka  3-0</li>
+                                <li>Edina   2-1</li>
+                                <li>St. Paul   2-1</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h2>Cold War</h2>
+                            <ol>
+                                <li>Bloomington  3-0</li>
+                                <li>Woodbury   2-1</li>
+                                <li>Duluth   2-1</li>
+                            </ol>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="schedule">
+                    <h1 class="divTitle">Upcoming Matches</h1>
+                    <dl>5/2 - Rocket League - Bloom V.S. Edina</dl>
+                    <dl>5/2 - Fortnite - Mpls V.S. Shakopee</dl>
+                    <dl>5/3 - Rocket League - Mpls V.S. Mtka</dl>
+                    <dl>5/3 - COD: MW - St. Paul V.S. Bloom</dl>
+                    <dl>5/4 - COD: CW - Duluth V.S. Edina</dl>
+                    <dl>5/4 - Rocket League - Farmington V.S. Roch</dl>
+                    <dl>5/4 - Fortnite - Edina V.S. Burnsville</dl>
+                    <dl>5/6 - COD: MW - Bloom V.S. AHA</dl>
+                </div>
+                <div id="news">
+                    <h1 class="divTitle">League News</h1>
+                    <div id="newsInfo">
+                        <div style="margin-bottom: 10px;">
+                            <img src="images/jstn.jpg" alt="jstn" width="40%" style="float: right; max-height: 177px; max-width: 240px;">
+                            <h2 style="text-align: center; margin-bottom: 40px;">Jstn Wins Season 1 MVP</h2>
+                            <h4 style="padding-left: 5px; padding-right: 5px; font-size: 14px;">The veteran Jstn brings in his first MVP award in the inagural season for Twin Cities Esports League. Racking up 22 goals and 15 assists makes it no question who was gonna win. Jstn is keeping the same teammates in TNobes and Jelder, these three already showing their dominance as season two is into its first month. After three games this Bloomington team has rolled through their opponents only giving up 3 goals in toatal.</h4>
+                        </div>
+                        <div>
+                            <img src="images/esports_stadium.jpg" alt="jstn" width="40%" style="float: right; max-height: 170px; max-width: 303px;">
+                            <h2 style="text-align: center; margin-bottom: -5px;">The First Season Finals comes to an end</h2>
+                            <h4 style="padding-left: 5px; padding-right: 5px; font-size: 14px;">Nobody knew how the inagural season for Twin Cities Esports was going to turn out. After a lively crowd at the Xcel Energy Center for the Season 1 finals, we can tell this league is here to stay. The final 4 style event was between Bloomington, Minneapolis, Edina, and Duluth. The Bloomington squad was heavily favoured coming into the event, and to the surprise of no one Bloomington brought home the Championship! After rolling through Duluth in the semifinal, Minneapolis put up quite the fight in the championship, bringing it to game 7.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <button>Contact</button>
+                <div style="width: 20px;"></div>
+                <button>Page Info</button>
+            </footer>
+        </div>
+        
+    </body>
+</html>
